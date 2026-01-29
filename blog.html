@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Honeybee Art</title>
+
+  <style>
+    /* 🌿 General Page Styling */
+    body {
+      background-color: #A2D19E; /* Soft green background */
+      font-family: Didot, serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /* 🌿 Header & Navigation (matches Contact page) */
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin: 20px 0;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🌿 Blog Boxes */
+    .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .box, .product {
+      background-color: rgba(255, 255, 255, 0.25);
+      border: 2px solid white;
+      border-radius: 15px;
+      padding: 20px;
+      width: 300px;
+      height: auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover, .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .box h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .box p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: white;
+    }
+
+    /* 🌿 Clickable Box */
+    .box-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .box-link:hover .box {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    /* 🌿 Image Styling */
+    .double {
+      border-width: 5px;
+      border-style: double;
+      border-color: white;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    /* 🌿 Button Styling */
+    .buy-button {
+      background-color: white;
+      color: #A2D19E;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-size: 16px;
+      margin-top: 15px;
+      align-self: center;
+    }
+
+    .buy-button:hover {
+      background-color: #e0f0de;
+      color: #50744e;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🌿 Header Section (Matches Contact Page) -->
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="doc.HTML2.html">Home</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Commissions.html">Commissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🌿 Blog Content -->
+  <main>
+    <div class="box-container">
+      <!-- ✅ Clickable Blog Post -->
+      <a href="AI-WhereIsTheLine.html" class="box-link">
+        <div class="box">
+          <h2>AI – Where is the line?</h2>
+          <img src="Images/TV.png" alt="AI Blog Preview" class="double">
+          <p>Real talk on what AI ACTUALLY helps us with.</p>
+        </div>
+      </a>
+
+      <!-- 🌿 Blog 2 Box -->
+      <div class="box">
+        <h2>N/A</h2>
+		<img src="Images.jpg" alt="Oxford Comma Blog Preview" class="double">
+        <p>N/A</p>
+      </div>
+
+      <!-- 🌿 Blog 3 Box -->
+      <div class="box">
+        <h2>N/A</h2>
+		<img src="Images/" alt="Poem Blog Preview" class="double">
+        <p>N/A</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
