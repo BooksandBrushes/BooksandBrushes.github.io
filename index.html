@@ -15,51 +15,58 @@
       text-align: center;
     }
 
-    h1, h2, p {
+    h1, h2, h3, p {
+      color: white;
       margin: 0 0 10px;
     }
 
     a {
+      text-decoration: none;
       color: white;
       font-weight: bold;
-      text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    /* 🌿 Header & Navigation */
+    /* 🌿 Header & Navigation (UNCHANGED) */
     header {
-      padding-top: 10px;
       margin-bottom: 30px;
+      padding-top: 10px;
     }
 
     h1 {
       font-size: 36px;
+      margin-bottom: 10px;
     }
 
     nav {
-      margin: 20px auto;
+      margin: 20px 0;
       background-color: rgba(255, 255, 255, 0.2);
       padding: 10px;
       border-radius: 10px;
-      width: fit-content;
     }
 
     nav ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
       margin: 0;
     }
 
-    nav li {
+    nav ul li {
       display: inline-block;
       margin: 0 15px;
     }
 
-    nav a {
+    nav ul li a {
+      color: white;
+      font-weight: bold;
       font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
     }
 
     /* 🌿 Banner Image */
@@ -71,7 +78,7 @@
       border-bottom: 5px double white;
     }
 
-    /* 🌿 Content Box */
+    /* 🌿 Box Layout */
     .box-container {
       display: flex;
       justify-content: center;
@@ -89,9 +96,9 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    /* 🌿 Responsive */
+    /* 🌿 Responsive Design */
     @media (max-width: 700px) {
-      nav li {
+      nav ul li {
         display: block;
         margin: 10px 0;
       }
@@ -105,7 +112,7 @@
 
 <body>
 
-  <!-- 🌿 Header -->
+  <!-- 🌿 Header & Navigation -->
   <header>
     <h1>Trista Acker</h1>
     <nav>
@@ -118,8 +125,8 @@
     </nav>
   </header>
 
-  <!-- 🌿 Banner -->
-  <img 
+  <!-- 🌿 Banner Image -->
+  <img
     src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/whimsy.jpg?raw=true"
     alt="Website Banner"
     class="banner"
@@ -129,9 +136,10 @@
   <main>
     <div class="box-container">
       <div class="box">
-        <h2>Welcome to my portfolio!</h2>
+        <h2>Welcome</h2>
         <p>
-          This part of Books&Brushes shows off the projects i'm most proud of.
+          Books & Brushes is a creative space for art, literacy,
+          and imaginative expression.
         </p>
       </div>
     </div>
@@ -139,6 +147,7 @@
 
 </body>
 </html>
+
 
 
 
