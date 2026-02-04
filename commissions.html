@@ -6,9 +6,8 @@
   <title>Commissions</title>
 
   <style>
-    /* 🌿 General Page Styling */
     body {
-      background-color: #A2D19E; /* soft green from homepage */
+      background-color: #A2D19E;
       font-family: Didot, serif;
       color: white;
       text-align: center;
@@ -16,7 +15,6 @@
       margin: 0;
     }
 
-    /* 🌿 Header & Navigation (MATCHED to Contact Page) */
     header {
       margin-bottom: 30px;
     }
@@ -55,7 +53,6 @@
       text-decoration: underline;
     }
 
-    /* 🌿 Banner Image Styling */
     .banner {
       width: 100%;
       height: auto;
@@ -64,7 +61,6 @@
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     }
 
-    /* 🌿 Content Image (Commission Flyer) */
     .double {
       display: block;
       margin: 40px auto;
@@ -82,7 +78,6 @@
       box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
     }
 
-    /* 🌿 Content Boxes */
     .box {
       background-color: rgba(255, 255, 255, 0.25);
       border: 2px double white;
@@ -98,7 +93,6 @@
       text-align: center;
     }
 
-    /* 🌿 Responsive Adjustments */
     @media (max-width: 600px) {
       nav ul li {
         display: block;
@@ -115,7 +109,6 @@
 </head>
 
 <body>
-  <!-- 🌿 Header (updated to match Contact page) -->
   <header>
     <h1>Commissions</h1>
     <nav>
@@ -128,47 +121,34 @@
     </nav>
   </header>
 
-  <!-- 🌿 Banner Image -->
   <img src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/banner.png?raw=true" alt="Website Banner" class="banner">
 
-  <!-- 🌿 Main Content -->
   <main>
     <img src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/commission1.png?raw=true" alt="Traditional Commission Flyer" class="double">
-      <!-- 🌿 Contact Form -->
-  <div class="form-box">
-    <form action="submit_form.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your email" required>
+    <div class="form-box">
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-      <label for="details">Commission Details:</label>
-      <textarea id="details" name="details" placeholder="Describe what you’d like me to draw!" required></textarea>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-      <input type="submit" value="Submit Request">
-    </form>
-  </div>
+        <label for="details">Commission Details:</label>
+        <textarea id="details" name="details" placeholder="Describe what you’d like me to draw!" required></textarea>
 
-  <!-- 🌿 Contact Information -->
-  <div class="contact-info">
-    <p><strong>Email:</strong> AckerTrista@gmail.com</p>
-    <p><strong>Studio:</strong> </p>
-  </div>
-</body>
-      </p>
+        <input type="submit" value="Submit Request">
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> AckerTrista@gmail.com</p>
+      <p><strong>Studio:</strong></p>
     </div>
   </main>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
 
 
 
