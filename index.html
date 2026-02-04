@@ -6,7 +6,6 @@
   <title>BooksandBrushes</title>
 
   <style>
-    /* 🌿 General Page Styling */
     body {
       background-color: #A2D19E;
       font-family: Didot, serif;
@@ -30,7 +29,6 @@
       text-decoration: underline;
     }
 
-    /* 🌿 Header & Navigation (UNCHANGED) */
     header {
       margin-bottom: 30px;
       padding-top: 10px;
@@ -65,11 +63,6 @@
       font-size: 18px;
     }
 
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    /* 🌿 Banner Image */
     .banner {
       width: 100%;
       max-height: 400px;
@@ -78,13 +71,13 @@
       border-bottom: 5px double white;
     }
 
-    /* 🌿 Box Layout */
     .box-container {
       display: flex;
       justify-content: center;
+      gap: 30px;
       margin: 40px auto;
-      width: 120%;
       max-width: 1200px;
+      flex-wrap: wrap;
     }
 
     .box {
@@ -94,9 +87,13 @@
       padding: 20px;
       width: 300px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
     }
 
-    /* 🌿 Responsive Design */
+    .box h2 {
+      text-align: center;
+    }
+
     @media (max-width: 700px) {
       nav ul li {
         display: block;
@@ -112,7 +109,6 @@
 
 <body>
 
-  <!-- 🌿 Header & Navigation -->
   <header>
     <h1>Books&Brushes</h1>
     <nav>
@@ -125,36 +121,61 @@
     </nav>
   </header>
 
-  <!-- 🌿 Banner Image -->
   <img
     src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/whimsy.jpg?raw=true"
     alt="Website Banner"
     class="banner"
   />
 
-  <!-- 🌿 Main Content -->
   <main>
+
+    <!-- Existing welcome box (kept) -->
     <div class="box-container">
       <div class="box">
         <h2>Welcome!</h2>
         <p>
-          Books & Brushes is a personal website showcasing my technical writing portfolio, blog, and art buisness.
+          Books & Brushes is a personal website showcasing my technical writing portfolio, blog, and art business.
         </p>
       </div>
     </div>
+
+    <!-- NEW: Technical Writing Focus -->
+    <div class="box-container">
+      <div class="box">
+        <h2>Technical Writing</h2>
+        <p>
+          I create clear, user-focused documentation that helps people understand complex systems.
+        </p>
+        <p>
+          My work focuses on usability, accessibility, and plain language.
+        </p>
+      </div>
+
+      <!-- NEW: Skills & Tools -->
+      <div class="box">
+        <h2>Skills & Tools</h2>
+        <p>• User guides & tutorials</p>
+        <p>• Process documentation & SOPs</p>
+        <p>• Markdown, HTML & GitHub</p>
+        <p>• Editing & content structure</p>
+      </div>
+
+      <!-- NEW: Portfolio Preview -->
+      <div class="box">
+        <h2>Featured Work</h2>
+        <p>
+          Selected documentation samples including tutorials, guides, and structured technical content.
+        </p>
+        <p>
+          <a href="portfolio.html">View Technical Writing Portfolio →</a>
+        </p>
+      </div>
+    </div>
+
   </main>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
