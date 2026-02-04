@@ -24,23 +24,26 @@
       margin-bottom: 10px;
     }
 
+    /* 🌿 Full-width nav bar */
     nav {
-      margin: 20px 0;
+      width: 100%;
       background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px;
+      padding: 15px 0;
       border-radius: 10px;
-      display: inline-block;
+      box-sizing: border-box;
     }
 
     nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
     }
 
     nav ul li {
       display: inline-block;
-      margin: 0 15px;
     }
 
     nav ul li a {
@@ -48,10 +51,14 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
+      padding: 5px 10px;
+      transition: background-color 0.3s ease, border-radius 0.3s ease;
     }
 
     nav ul li a:hover {
       text-decoration: underline;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
     }
 
     .banner {
@@ -74,39 +81,29 @@
 
     .box h2 {
       text-align: center;
-    }
-
-    .pdf-link {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 15px;
-      background-color: white;
-      color: #A2D19E;
-      font-weight: bold;
-      border-radius: 10px;
-      width: fit-content;
-      text-decoration: none;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .pdf-link:hover {
-      background-color: #e0f0de;
-      color: #50744e;
+      margin-bottom: 15px;
     }
 
     .pdf-embed {
       display: block;
-      margin: 30px auto;
-      width: 80%;
+      margin: 20px auto;
+      width: 100%;
       height: 600px;
       border: 2px double white;
       border-radius: 10px;
     }
 
+    .description {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: white;
+    }
+
     @media (max-width: 600px) {
-      nav ul li {
-        display: block;
-        margin: 10px 0;
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
       }
 
       .box {
@@ -114,7 +111,6 @@
       }
 
       .pdf-embed {
-        width: 95%;
         height: 400px;
       }
     }
@@ -138,18 +134,21 @@
   <main>
     <div class="box">
       <h2>Editorial Assignment</h2>
-      <!-- Link to download or open PDF -->
-      <a href="documents/Editorial Assignment.pdf" target="_blank" class="pdf-link">View PDF</a>
 
       <!-- Embed PDF directly -->
-      <embed src="portfolio/Editorial Assignment.pdf" type="application/pdf" class="pdf-embed">
+      <embed src="documents/Editorial Assignment.pdf" type="application/pdf" class="pdf-embed">
+
+      <!-- Description of the portfolio piece -->
+      <div class="description">
+        <p>
+          This editorial assignment showcases my ability to create clear, concise, and structured written content for publication. It highlights research, formatting, and technical writing skills applied to a professional context.
+        </p>
+      </div>
     </div>
   </main>
 
 </body>
 </html>
-
-
 
 
 
