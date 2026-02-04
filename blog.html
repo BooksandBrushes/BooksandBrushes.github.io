@@ -6,9 +6,8 @@
   <title>Blog - Honeybee Art</title>
 
   <style>
-    /* 🌿 General Page Styling */
     body {
-      background-color: #A2D19E; /* Soft green background */
+      background-color: #A2D19E;
       font-family: Didot, serif;
       color: white;
       text-align: center;
@@ -16,7 +15,6 @@
       margin: 0;
     }
 
-    /* 🌿 Header & Navigation (matches Contact page) */
     header {
       margin-bottom: 30px;
     }
@@ -31,6 +29,7 @@
       background-color: rgba(255, 255, 255, 0.2);
       padding: 10px;
       border-radius: 10px;
+      display: inline-block;
     }
 
     nav ul {
@@ -55,7 +54,15 @@
       text-decoration: underline;
     }
 
-    /* 🌿 Blog Boxes */
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 30px;
+      border-bottom: 4px double white;
+    }
+
     .box-container {
       display: flex;
       justify-content: center;
@@ -67,13 +74,12 @@
       max-width: 1200px;
     }
 
-    .box, .product {
+    .box {
       background-color: rgba(255, 255, 255, 0.25);
       border: 2px solid white;
       border-radius: 15px;
       padding: 20px;
       width: 300px;
-      height: auto;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -84,7 +90,7 @@
       transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
 
-    .box:hover, .product:hover {
+    .box:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
     }
@@ -92,63 +98,32 @@
     .box h2 {
       font-size: 24px;
       margin-bottom: 10px;
-      color: white;
     }
 
     .box p {
       font-size: 16px;
       line-height: 1.5;
-      color: white;
     }
 
-    /* 🌿 Clickable Box */
     .box-link {
       text-decoration: none;
       color: inherit;
       display: block;
     }
 
-    .box-link:hover .box {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
-    }
-
-    /* 🌿 Image Styling */
     .double {
-      border-width: 5px;
-      border-style: double;
-      border-color: white;
+      border: 5px double white;
       display: block;
       margin: 20px auto;
       border-radius: 10px;
       max-width: 400px;
       width: 90%;
     }
-
-    /* 🌿 Button Styling */
-    .buy-button {
-      background-color: white;
-      color: #A2D19E;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 15px;
-      font-size: 16px;
-      margin-top: 15px;
-      align-self: center;
-    }
-
-    .buy-button:hover {
-      background-color: #e0f0de;
-      color: #50744e;
-    }
   </style>
 </head>
 
 <body>
-  <!-- 🌿 Header Section (Matches Contact Page) -->
+
   <header>
     <h1>Blog</h1>
     <nav>
@@ -161,11 +136,16 @@
     </nav>
   </header>
 
-  <!-- 🌿 Blog Content -->
   <main>
-	    <img src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/banner.png?raw=true" alt="Website Banner" class="banner">
+
+    <img
+      src="https://github.com/BooksandBrushes/BooksandBrushes.github.io/blob/main/images/banner.png?raw=true"
+      alt="Website Banner"
+      class="banner"
+    />
+
     <div class="box-container">
-      <!-- ✅ Clickable Blog Post -->
+
       <a href="aiwhereistheline.html" class="box-link">
         <div class="box">
           <h2>AI – Where is the line?</h2>
@@ -174,26 +154,24 @@
         </div>
       </a>
 
-      <!-- 🌿 Blog 2 Box -->
       <div class="box">
         <h2>N/A</h2>
-		<img src="/images/oxford.jpg" alt="Oxford Comma Blog Preview" class="double">
+        <img src="/images/oxford.jpg" alt="Oxford Comma Blog Preview" class="double">
         <p>N/A</p>
       </div>
 
-      <!-- 🌿 Blog 3 Box -->
       <div class="box">
         <h2>N/A</h2>
-		<img src="images/" alt="Poem Blog Preview" class="double">
+        <img src="images/" alt="Poem Blog Preview" class="double">
         <p>N/A</p>
       </div>
+
     </div>
+
   </main>
+
 </body>
-
 </html>
-
-
 
 
 
