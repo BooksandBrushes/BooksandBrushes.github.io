@@ -62,23 +62,6 @@
       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .double {
-      display: block;
-      margin: 40px auto;
-      width: 60%;
-      max-width: 500px;
-      min-width: 300px;
-      border: 4px double white;
-      border-radius: 15px;
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .double:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
-    }
-
     .box {
       background-color: rgba(255, 255, 255, 0.25);
       border: 2px double white;
@@ -93,6 +76,33 @@
       text-align: center;
     }
 
+    .pdf-link {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 15px;
+      background-color: white;
+      color: #A2D19E;
+      font-weight: bold;
+      border-radius: 10px;
+      width: fit-content;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .pdf-link:hover {
+      background-color: #e0f0de;
+      color: #50744e;
+    }
+
+    .pdf-embed {
+      display: block;
+      margin: 30px auto;
+      width: 80%;
+      height: 600px;
+      border: 2px double white;
+      border-radius: 10px;
+    }
+
     @media (max-width: 600px) {
       nav ul li {
         display: block;
@@ -103,8 +113,9 @@
         padding: 15px;
       }
 
-      .double {
-        width: 80%;
+      .pdf-embed {
+        width: 95%;
+        height: 400px;
       }
     }
   </style>
@@ -124,11 +135,19 @@
     </nav>
   </header>
 
+  <main>
+    <div class="box">
+      <h2>Editorial Assignment</h2>
+      <!-- Link to download or open PDF -->
+      <a href="documents/Editorial Assignment.pdf" target="_blank" class="pdf-link">View PDF</a>
+
+      <!-- Embed PDF directly -->
+      <embed src="portfolio/Editorial Assignment.pdf" type="application/pdf" class="pdf-embed">
+    </div>
+  </main>
+
 </body>
 </html>
-
-
-
 
 
 
