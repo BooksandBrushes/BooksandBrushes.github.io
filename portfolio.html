@@ -11,8 +11,8 @@
       font-family: Didot, serif;
       color: white;
       text-align: center;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     header {
@@ -24,49 +24,30 @@
       margin-bottom: 10px;
     }
 
-    /* 🌿 Full-width nav bar */
     nav {
       width: 100%;
       background-color: rgba(255, 255, 255, 0.2);
       padding: 15px 0;
-      border-radius: 10px;
-      box-sizing: border-box;
     }
 
     nav ul {
-      list-style-type: none;
-      padding: 0;
+      list-style: none;
       margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       gap: 40px;
     }
 
-    nav ul li {
-      display: inline-block;
-    }
-
-    nav ul li a {
+    nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
-      padding: 5px 10px;
-      transition: background-color 0.3s ease, border-radius 0.3s ease;
     }
 
-    nav ul li a:hover {
+    nav a:hover {
       text-decoration: underline;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 5px;
-    }
-
-    .banner {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-bottom: 4px double white;
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
     }
 
     .box {
@@ -81,23 +62,14 @@
 
     .box h2 {
       text-align: center;
-      margin-bottom: 15px;
     }
 
-    .pdf-embed {
-      display: block;
-      margin: 20px auto;
+    iframe {
       width: 100%;
       height: 600px;
       border: 2px double white;
       border-radius: 10px;
-    }
-
-    .description {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-      color: white;
+      margin-top: 15px;
     }
 
     @media (max-width: 600px) {
@@ -106,11 +78,7 @@
         gap: 10px;
       }
 
-      .box {
-        padding: 15px;
-      }
-
-      .pdf-embed {
+      iframe {
         height: 400px;
       }
     }
@@ -119,76 +87,49 @@
 
 <body>
 
-  <header>
-    <h1>Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
+<main>
 
-    <div class="box">
-      <h2>AI Comparison Project</h2>
-      <embed src="portfolio/Acker_Trista_AIComparison (1) (1).pdf" type="application/pdf" class="pdf-embed">
-      <div class="description">
-        <p>
-          This project compares AI tools and their applications, demonstrating analytical thinking, technical literacy, and clear evaluative writing.
-        </p>
-      </div>
-    </div>
+  <div class="box">
+    <h2>AI Comparison Project</h2>
+    <iframe src="portfolio/Acker_Trista_AIComparison.pdf"></iframe>
+  </div>
 
-    <div class="box">
-      <h2>Business Proposal</h2>
-      <embed src="portfolio/Business.Proposal(1) (1).pdf" type="application/pdf" class="pdf-embed">
-      <div class="description">
-        <p>
-          A formal business proposal highlighting professional communication, audience awareness, and persuasive structure.
-        </p>
-      </div>
-    </div>
+  <div class="box">
+    <h2>Business Proposal</h2>
+    <iframe src="portfolio/Business_Proposal.pdf"></iframe>
+  </div>
 
-    <div class="box">
-      <h2>Content Analysis of LinkedIn Profiles</h2>
-      <embed src="portfolio/Content%Analysis%of%LinkedIn%Profiles.pdf" type="application/pdf" class="pdf-embed">
-      <div class="description">
-        <p>
-          An in-depth content analysis examining professional branding, tone, and rhetorical strategies used across LinkedIn profiles.
-        </p>
-      </div>
-    </div>
+  <div class="box">
+    <h2>Content Analysis of LinkedIn Profiles</h2>
+    <iframe src="portfolio/Content_Analysis_of_LinkedIn_Profiles.pdf"></iframe>
+  </div>
 
-    <div class="box">
-      <h2>Content Audit</h2>
-      <embed src="portfolio/Content Audit.pdf" type="application/pdf" class="pdf-embed">
-      <div class="description">
-        <p>
-          This content audit evaluates structure, usability, and effectiveness of written materials, emphasizing revision and optimization skills.
-        </p>
-      </div>
-    </div>
+  <div class="box">
+    <h2>Content Audit</h2>
+    <iframe src="portfolio/Content_Audit.pdf"></iframe>
+  </div>
 
-    <div class="box">
-      <h2>Data Visualization Discussion Lead</h2>
-      <embed src="portfolio/Data Visualization Discussion Lead.pdf" type="application/pdf" class="pdf-embed">
-      <div class="description">
-        <p>
-          A discussion-led analysis focused on interpreting and communicating data through visual formats for clarity and impact.
-        </p>
-      </div>
-    </div>
+  <div class="box">
+    <h2>Data Visualization Discussion Lead</h2>
+    <iframe src="portfolio/Data_Visualization_Discussion_Lead.pdf"></iframe>
+  </div>
 
-  </main>
+</main>
 
 </body>
 </html>
-
-
 
 
 
