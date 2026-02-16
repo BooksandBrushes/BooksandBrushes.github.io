@@ -94,6 +94,22 @@
       text-align: center;
     }
 
+    /* ADDED: Headshot + description container */
+    .about-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 40px auto;
+      max-width: 1000px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 400px;
+      text-align: left;
+    }
+
     @media (max-width: 700px) {
       nav ul li {
         display: block;
@@ -138,23 +154,25 @@
       </div>
     </div>
 
-    <img
-      src="images/headshot.JPG"
-      alt="Traditional Commission Flyer"
-      width= "500" height= "auto">
-    
+    <!-- ADDED: About Section -->
+    <div class="about-section">
+      <img
+        src="images/headshot.JPG"
+        alt="Traditional Commission Flyer"
+        width="500" height="auto">
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Trista, a Technical and Professional Communication student passionate about creative expression, design, and clear communication. I combine technical writing skills with artistic creativity to build engaging and accessible content.
+        </p>
+      </div>
+    </div>
 
   </main>
 
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
