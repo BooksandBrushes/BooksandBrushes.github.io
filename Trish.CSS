@@ -179,3 +179,31 @@ nav ul li a:hover {
     width: 300px;
   }
 }
+.cat {
+  position: relative;
+  width: 400px;
+  max-width: 80%;
+  display: block;
+  margin: 40px auto;
+  border: 4px solid #a2d19e;
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 6px #ffffff,
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Soft floating sparkles */
+.cat::after {
+  content: "✦ ✧ ✦ ✧ ✦";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 15px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
