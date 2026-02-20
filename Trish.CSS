@@ -92,19 +92,55 @@ nav ul li a:hover {
   max-width: 90%;
 }
 
+/* Cute accented image */
 .cat {
+  position: relative;
   width: 400px;
   max-width: 80%;
   display: block;
-  margin: 40px auto;
+  margin: 50px auto;
   border: 4px solid #a2d19e;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  /* Layered white frame + glow */
+  box-shadow:
+    0 0 0 6px #ffffff,
+    0 0 25px rgba(255,255,255,0.6),
+    0 8px 20px rgba(0, 0, 0, 0.15);
+
   transition: transform 0.3s ease;
 }
 
 .cat:hover {
   transform: scale(1.03);
+}
+
+/* Top sparkles */
+.cat::before {
+  content: "✦ ✧ ✦";
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 18px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Bottom sparkles */
+.cat::after {
+  content: "✧ ✦ ✧";
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 18px;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 /* ================================
@@ -179,31 +215,3 @@ nav ul li a:hover {
     width: 300px;
   }
 }
-.cat {
-  position: relative;
-  width: 400px;
-  max-width: 80%;
-  display: block;
-  margin: 40px auto;
-  border: 4px solid #a2d19e;
-  border-radius: 20px;
-  box-shadow:
-    0 0 0 6px #ffffff,
-    0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-/* Soft floating sparkles */
-.cat::after {
-  content: "✦ ✧ ✦ ✧ ✦";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  color: #ffffff;
-  letter-spacing: 15px;
-  opacity: 0.9;
-  pointer-events: none;
-}
-
